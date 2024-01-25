@@ -64,11 +64,13 @@ function copiarTexto(){
 
     Swal.fire({
         title: 'Qual texto deseja copiar?',
+        showCloseButton: true,
         showCancelButton: true,
         confirmButtonText: 'Texto Criptografado',
         cancelButtonText: 'Texto Descriptografado',
         cancelButtonColor: '#d33',
         confirmButtonColor: '#3085d6',
+        
       }).then((result) => {
         if (result.isConfirmed) {
             navigator.clipboard.writeText(textoResposta).then(function() {

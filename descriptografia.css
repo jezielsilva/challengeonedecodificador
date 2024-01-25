@@ -1,59 +1,81 @@
-.telaCompleta{
+.telaCompleta {
     background-color: bisque;
     display: flex;
     justify-content: center;
 }
 
-.textoDigitado{
-    width: 700px;
-    height: 200px;
+.textoDigitado,
+.textoResposta {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px; /* Adicione um espaço entre os campos de texto */
 }
 
-.textoResposta{
-    width: 700px;
-    height: 200px;
+.campoDigitado,
+.campoResposta {
+    margin: 10px 0; /* Adicione margens no topo e na parte inferior */
 }
 
-.campoDigitado{
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.campoResposta{
-    margin-left: 40px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.botoes{
+.botoes {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    border-radius: 50%;
+}
+
+.cripto,
+.descripto,
+.botaoCopiar {
+    width: 100%;
+    margin-bottom: 10px; 
+    border: none;
+    border-radius: 50px;
+    padding: 10px
 }
 
 .cripto{
-    margin-right: 50px;
-    padding: 10px;
-    border: none;
-    border-radius: 25px;
     background-color: green;
-    color:white;
-    cursor: pointer;
+    color: white;
 }
 
 .descripto{
-    padding: 10px;
-    border: none;
-    border-radius: 25px;
     background-color: red;
-    color:white;
-    cursor: pointer;
+    color: white;
 }
 
 .botaoCopiar{
-    padding: 10px;
-    border: none;
-    border-radius: 25px;
     background-color: blue;
-    color:white;
-    cursor: pointer;
+    color: white;
 }
+
+@media (min-width: 600px) { /*dispositivos maiores*/
+    .textoDigitado,
+    .textoResposta {
+        width: 100%;
+        height: 200px  
+    }
+
+    .botoes {
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cripto,
+    .descripto,
+    .botaoCopiar {
+        width: auto; 
+        margin-bottom: 0; 
+        margin-right: 10px; 
+    }
+}
+
+@media (max-width: 600px) { /*dispositivos menores*/
+    .textoDigitado,
+    .textoResposta {
+        width: 100%; 
+        height: 100px;
+    }
+
+}
+
