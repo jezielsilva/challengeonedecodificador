@@ -1,0 +1,59 @@
+.telaCompleta{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+}
+
+.textoDigitado{
+    width: 700px;
+    height: 200px;
+}
+
+.textoResposta{
+    width: 700px;
+    height: 200px;
+}
+
+.campoDigitado{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.campoResposta{
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+}
+
+.cripto{
+    margin-right: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: green;
+    color:white;
+    cursor: pointer;
+}
+
+.descripto{
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: red;
+    color:white;
+    cursor: pointer;
+}
+
+.botaoCopiar{
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: blue;
+    color:white;
+    cursor: pointer;
+}

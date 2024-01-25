@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cript. e Descript.</title>
+    <link rel="stylesheet" type="text/css" href="descriptografia.css"/>
+  </head>
+
+  <body class="telaCompleta">
+
+    <div>
+        <div class="campoDigitado">
+            <span>Digite seu texto</span>
+            <textarea id="textoDigitado" class="textoDigitado" aria-label="Digite seu texto"></textarea>
+        </div>
+    
+        <div class="botoes">
+            <button type="button" class="cripto" onclick="criptografar()">Criptografar</button>
+            <button type="button" class="descripto" onclick="descript()">Descriptografar</button>
+        </div>
+
+        <div class="campoResposta">
+            <span>Resposta</span>
+            <textarea id="textoResposta" class="textoResposta" disabled></textarea>
+        </div>
+
+        <div class="botoes">
+            <button type="button" class="botaoCopiar" onclick="copiarTexto()">Copiar</button>
+        </div>
+    </div>
+    <script src="descriptografia.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  </body>
+</html>
